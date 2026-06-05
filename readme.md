@@ -1,23 +1,33 @@
 # Windows Profile Migration
 
-A collection of guides for creating, migrating, and repairing Windows user profiles.
+Guides for migrating, repairing, and renaming Windows user profiles.
 
 ## Overview
 
-This repository documents common profile migration and recovery tasks using:
-
-- Command Prompt
-- PowerShell
-- Registry Editor
+This repository covers common profile migration scenarios, including creating a new profile, renaming profile folders, and correcting Windows Explorer folder mappings.
 
 ## Guides
 
-### User Management
+* [Create a New User Account](create-user-account.md)
+* [Profile Registry Configuration](profile-registry-configuration.md)
+* [Rename a Windows Profile Folder](rename-profile-folder.md)
 
-- [Create a New User Account](create-user-account.md)
+## Common Registry Locations
 
-### Registry Configuration
+### Profile Mapping
 
-- [Profile Registry Configuration](profile-registry-configuration.md)
+```text
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList
+```
 
+### User Shell Folders
 
+```text
+HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders
+```
+
+### Shell Folders
+
+```text
+HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders
+```
